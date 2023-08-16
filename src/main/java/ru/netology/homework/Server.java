@@ -34,6 +34,7 @@ public class Server {
             e.printStackTrace();
         }
     }
+
     public void addHandler(String method, String path, Handler handler) {
         handlers.computeIfAbsent(method, k -> new HashMap<>()).put(path, handler);
     }
